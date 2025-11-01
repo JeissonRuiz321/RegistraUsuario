@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Perfil del Usuario</h1>
+        <p><strong>Nombre de Usuario:</strong> <span id="profile-username"></span></p>
+        <p><strong>Correo Electrónico:</strong> <span id="profile-email"></span></p>
+        <a href="index.html" class="button">Cerrar sesión</a>
+    </div>
+    <script>
+        // Mostrar los datos del usuario desde LocalStorage
+        document.getElementById('profile-username').textContent = localStorage.getItem('username');
+        document.getElementById('profile-email').textContent = localStorage.getItem('email');
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "container"> 
+        <h1>¡Bienvenido!</h1>
+        <p>Tu registro fue exitoso. Ahora puedes explorar nuestra plataforma.</p>
+        <a href="login.html" class="button">ir a las casas ahora</a>
+    </div>
+    <script>
+        // Verificar si el usuario ha iniciado sesión
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+            // Si no ha iniciado sesión, redirigir al inicio de sesión
+            window.location.href = 'login.html';
+        }
+
+        // Redirigir automáticamente a Houses.html después de 5 segundos
+        setTimeout(() => {
+            window.location.href = "Houses.html";
+        }, 4000); // 4000 milisegundos = 4 segundos
+    </script>
+</body>
+</html>

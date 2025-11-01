@@ -1,0 +1,312 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgb(0, 0, 0);
+    width: 400px;
+    margin: 100px auto ;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #2f5a2f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    /* Alinea los elementos hacia la izquierda */
+}
+
+label {
+    display: block; /* Asegura que el texto del label esté en una línea separada */
+    margin-bottom: 10px; /* Reduce el espacio debajo del label */
+    margin-top: 10px;
+    color: #2f5a2f;
+    font-weight: bold; /* Opcional: hace el texto más destacado */
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    /* Estilo para el botón de Registrarse */
+button {
+    margin-top: 20px; /* Espacio entre el botón y el campo de entrada */
+    padding: 10px 20px; /* Tamaño del botón */
+    background-color: #2f5a2f;
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    border-radius: 8px; /* Bordes redondeados */    
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Transición suave para el cambio de color */
+}
+.register-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2f5a2f; /* Fondo verde */
+    color: #ffffff; /* Texto blanco */
+    border: 2px solid #ffffff; /* Borde blanco */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.register-button:hover {
+    background-color: #ffffff; /* Fondo blanco al pasar el cursor */
+    color: #2f5a2f; /* Texto verde al pasar el cursor */
+    border: 2px solid #2f5a2f; /* Borde verde */    
+}
+
+
+p a {
+    color: #2f5a2f; /* Cambia este color por el que prefieras */
+    text-decoration: none; /* Opcional: elimina el subrayado del enlace */
+}
+
+p a:hover {
+    color: #2f5a2f; /* Cambia el color al pasar el cursor */
+}
+
+button:hover {
+    background-color: #2f5a2f;
+}
+
+#message {
+    margin-top: 10px;
+    color: rgb(128, 0, 17);
+    text-align: center;
+}
+
+#success-message {
+    margin-top: 10px;
+    color: rgb(128, 0, 17);
+    text-align: center;
+}
+
+#error-message {
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}
+
+    /* Estilo para el botón de cerrar sesión */
+a.button {
+    display: inline-block; /* Cambia el display a inline-block */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a.button:hover {
+    background-color: #2f5a2f;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    background: #f5f5dc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(42, 80, 27, 0.1);
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Estilo para el título */
+h1 {
+    color: #2f5a2f;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los textos */
+p {
+    font-size: 18px;
+    color: #2f5a2f;
+    margin: 10px 0;
+}
+
+/* Estilo para el botón de cerrar sesión */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2f5a2f;
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    border: #ffffff 2px solid;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+a.button:hover {
+    background-color: #2f5a2f;
+    color: #ffffff;
+    border: #2f5a2f 2px solid;
+}   
+
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#2f5a2f; /* Color de fondo inicial */
+    color: rgb(255, 255, 255); /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border: 2px solid #ffffff; /* Borde verde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición suave */
+    cursor: pointer; /* Cambia el cursor a "mano" */
+}
+
+/* Cambia el color al pasar el cursor */
+.button-link:hover {
+    background-color: #ffffff; /* Color más oscuro al pasar el cursor */
+    color: #2f5a2f; /* Color del texto al pasar el cursor */
+    border: 2px solid #2f5a2f; /* Borde verde al pasar el cursor */
+}
+
+/* Cambia el color al hacer clic */
+.button-link:active {
+    background-color: #2f5a2f; /* Color aún más oscuro al hacer clic */
+    background: #111111;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+/* Estilo para el encabezado */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #f5f5dc; /* Fondo del encabezado */
+    color: #ffffff; /* Color del texto */
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom-right-radius: 8px; /* Bordes redondeados en la esquina inferior derecha */
+    z-index: 10; 
+    text-align: left;
+
+}
+
+/* Estilo para el logo */
+.logo {
+    margin: 0;
+    font-family: 'playfair display', serif ;    
+   text-align: left;
+   font-size: 55px;
+   font-weight: 700;
+}
+
+
+
+.highlight {
+    color: #2f5a2f;
+    font-weight: bold;
+}
+
+/* Estilo para la galeria de Casas*/
+.houses-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.house-card {
+    background: #f5f5dc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.house-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+
+.house-card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.house-card p {
+    font-size: 16px;
+    color: #2f5a2f;
+}
+
+.house-card .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #2f5a2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.house-card .button:hover {
+    background-color: #2f5a2f;
+}
+
+/* Estilo para Lifestyle */
+.highlight-green {
+    color: #2f5a2f;
+    font-weight: bold;  
+}
+
+
+
+/* Estilo para in design */
+.highlight-white {
+    color: rgba(255, 255, 255, 0.993);
+    font-weight: bold;
+    background-color: #2f5a2f;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+.highlight-white:hover {
+    background-color: #2f5a2f;
+    color: #ffffff;
+}
+
